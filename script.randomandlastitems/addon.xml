@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.randomandlastitems" name="Random and Last items script" version="2.2.2.002" provider-name="MikeBZH44, Martijn, Black, YLLOW_DRAGON">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="xbmc.json" version="6.0.0"/>
+        <import addon="script.module.simplejson" version="2.0.10"/>
+    </requires>
+    <extension point="xbmc.python.library" library="randomandlastitems.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Random And Last Items script</summary>
+        <summary lang="fr">Random And Last Items script</summary>
+        <summary lang="ru">Скрипт - случайные и последние элементы </summary>
+        <description lang="en">Script to get Random or Last added movies, episodes, albums or music videos from the database.Can optionnaly handle playlist to filter results.</description>        
+        <description lang="fr">Script qui retourne, soit de manière aléatoire, soit les derniers ajouts, les films, épisodes, albums ou clips de la base de données.Il peut optionnellement gerer les playlistes pour filtrer les resultats.</description>
+        <description lang="ru">Скрипт получает случайное или последние добавленные фильмы, эпизоды, альбомы или музыкальные клипы из медиатеки. Может обрабатывать плейлист для фильтрации результатов.</description>        
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website></website>
+        <forum>http://forum.xbmc.org/showthread.php?tid=122448</forum>
+        <email>nkvoronov@gmail.com</email>
+        <source>https://github.com/nkvoronov/script.randomandlastitems.git</source>
+    </extension>
+</addon>

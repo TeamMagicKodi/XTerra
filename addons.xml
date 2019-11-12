@@ -1,5 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="script.favourites" name="Favourites script" version="8.0.8" provider-name="ronie|`Black">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py"/>
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary>Favourites script</summary>
+		<description>Fetches item from your xbmc favourites to populate Home menu/submenu with custom buttons.</description>
+		<disclaimer>Needs skin support for it to be used properly</disclaimer>
+		<platform>all</platform>
+		<forum>http://forum.xbmc.org/showthread.php?tid=114671</forum>
+		<source>https://code.google.com/p/ronie/source/</source>
+	</extension>
+</addon>
+
+<addon id="script.module.requests"
+       name="requests"
+       version="2.22.0"
+       provider-name="kennethreitz">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.urllib3" version="1.22"/>
+    <import addon="script.module.chardet" version="3.0.4"/>
+    <import addon="script.module.idna" version="2.6"/>
+    <import addon="script.module.certifi" version="2017.07.27.1"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Python HTTP for Humans</summary>
+    <description lang="en_GB">Packed for KODI from https://pypi.org/project/requests/</description>
+    <platform>all</platform>
+    <language></language>
+    <license>Apache2</license>
+    <forum></forum>
+    <website>http://python-requests.org</website>
+    <source>https://github.com/Freso/script.module.requests</source>
+    <email>freso.dk AT gmail.com</email>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.xbmcswift2" name="xbmcswift2" provider-name="Jonathan Beluch (jbel)" version="2.4.01">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <language />
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.randomandlastitems" name="Random and Last items script" version="2.2.2.002" provider-name="MikeBZH44, Martijn, Black, YLLOW_DRAGON">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="xbmc.json" version="6.0.0"/>
+        <import addon="script.module.simplejson" version="2.0.10"/>
+    </requires>
+    <extension point="xbmc.python.library" library="randomandlastitems.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Random And Last Items script</summary>
+        <summary lang="fr">Random And Last Items script</summary>
+        <summary lang="ru">Скрипт - случайные и последние элементы </summary>
+        <description lang="en">Script to get Random or Last added movies, episodes, albums or music videos from the database.Can optionnaly handle playlist to filter results.</description>
+        <description lang="fr">Script qui retourne, soit de manière aléatoire, soit les derniers ajouts, les films, épisodes, albums ou clips de la base de données.Il peut optionnellement gerer les playlistes pour filtrer les resultats.</description>
+        <description lang="ru">Скрипт получает случайное или последние добавленные фильмы, эпизоды, альбомы или музыкальные клипы из медиатеки. Может обрабатывать плейлист для фильтрации результатов.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website></website>
+        <forum>http://forum.xbmc.org/showthread.php?tid=122448</forum>
+        <email>nkvoronov@gmail.com</email>
+        <source>https://github.com/nkvoronov/script.randomandlastitems.git</source>
+    </extension>
+</addon>
+
 <addon id="script.webgrab"
 version="0.0.39"
 name="Webgrab+Plus Configurator"
@@ -17,6 +96,111 @@ provider-name="primaeval">
   <description lang="en">Easily set up your Webgrab+Plus config and ini files.</description>
   <disclaimer lang="en">.</disclaimer>
 </extension>
+</addon>
+
+<addon id="service.library.data.provider" name="Library Data Provider" provider-name="BigNoid" version="0.3.2">
+	<requires>
+		<import addon="xbmc.json" version="7.9.0"/>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+		<import addon="script.module.routing" version="0.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="plugin.py">
+		<provides>video</provides>
+	</extension>
+	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Browse movies and episodes in a variety of sorted playlists.</summary>
+		<description lang="en">Plugin for skins to provide library data throughout the skin. It can also be used as standalone plugin to browse the playlists in the video library.</description>
+		<disclaimer lang="en" />
+		<platform>all</platform>
+		<language />
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=210063</forum>
+		<website>https://github.com/BigNoid/service.library.data.provider</website>
+		<email>big.noid@kodi.tv</email>
+		<source>https://github.com/BigNoid/service.library.data.provider</source>
+		<news>Added Polish and Hebrew translations, thx Etharr and Eng2Heb</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="service.skin.widgets" name="Skin Widgets" version="0.0.33.003" provider-name="Martijn, phil65, YLLOW_DRAGON">
+    <requires>
+        <import addon="xbmc.json" version="6.0.0"/>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.simplejson" version="2.0.10"/>
+    </requires>
+    <extension point="xbmc.service" library="default.py" start="login"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="be">Skin widgets</summary>
+        <summary lang="da">Widgets til Skins</summary>
+        <summary lang="de">Skin Widgets</summary>
+        <summary lang="el">Widgets κελύφους</summary>
+        <summary lang="en">Skin widgets</summary>
+        <summary lang="es">Skin widgets</summary>
+        <summary lang="fr">Skin widgets</summary>
+        <summary lang="gl">Widgets do Tema</summary>
+        <summary lang="hr">Dodaci za presvlaku</summary>
+        <summary lang="hu">Kinézet miniprogram</summary>
+        <summary lang="it">Skin widgets</summary>
+        <summary lang="ko">스킨 위젯</summary>
+        <summary lang="nl">Skin widgets</summary>
+        <summary lang="pl">Dodatki Skóry</summary>
+        <summary lang="pt">Widgets para Temas</summary>
+        <summary lang="pt_BR">Skin widgets</summary>
+        <summary lang="sk">Widgety Vzhľadov</summary>
+        <summary lang="sv">Skal widgetar</summary>
+        <summary lang="zh">皮肤微件</summary>
+        <summary lang="ru">Виджеты обложки</summary>
+        <description lang="be">Skin widgets</description>
+        <description lang="da">Widgets til Skins</description>
+        <description lang="de">Skin Widgets</description>
+        <description lang="el">Widgets κελύφους</description>
+        <description lang="en">Skin widgets</description>
+        <description lang="es">Skin widgets</description>
+        <description lang="fr">Skin widgets</description>
+        <description lang="gl">Widgets do Tema</description>
+        <description lang="hr">Dodaci za presvlaku</description>
+        <description lang="hu">Kinézet miniprogram</description>
+        <description lang="it">Skin widgets</description>
+        <description lang="ko">스킨 위젯</description>
+        <description lang="nl">Skin widgets</description>
+        <description lang="pl">Dodatki Skóry</description>
+        <description lang="pt">Widgets para Temas</description>
+        <description lang="pt_BR">Skin widgets</description>
+        <description lang="sk">Widgety Vzhľadov</description>
+        <description lang="sv">Skal widgetar</description>
+        <description lang="zh">皮肤微件</description>
+        <description lang="ru">Виджеты обложки</description>
+        <disclaimer lang="be">For information visit the wiki page or XBMC forum.</disclaimer>
+        <disclaimer lang="de">Besuche für mehr Informationen die Wiki-Seite oder das XBMC-Forum</disclaimer>
+        <disclaimer lang="el">Για πληροφορίες επισκεφθείτε τη σελίδα wiki ή το forum του XBMC.</disclaimer>
+        <disclaimer lang="en">For information visit the wiki page or XBMC forum.</disclaimer>
+        <disclaimer lang="es">Para más información, visite el wiki o los foros de XBMC.</disclaimer>
+        <disclaimer lang="fr">Pour plus d'information, visitez la page du Wiki ou dur forum XBMC.</disclaimer>
+        <disclaimer lang="gl">Para máis información visite a páxina wiki ou o foro do XBMC.</disclaimer>
+        <disclaimer lang="hr">Za više informacija posjetite wiki stranicu ili XBMC forum.</disclaimer>
+        <disclaimer lang="it">Per le informazioni visita la pagina wiki o il forum</disclaimer>
+        <disclaimer lang="ko">위키 페이지나 XBMC 포럼에서 추가 정보를 확인하세요.</disclaimer>
+        <disclaimer lang="nl">Bezoek voor informatie de wiki pagina of het XBMC forum.</disclaimer>
+        <disclaimer lang="pl">Odwiedź stronę wiki lub forum XBMC by znaleźć więcej informacji.</disclaimer>
+        <disclaimer lang="pt">Para mais informação, visite a página wiki ou o fórum do XBMC.</disclaimer>
+        <disclaimer lang="pt_BR">Para informações visite o página do wiki ou fórum XBMC.org.</disclaimer>
+        <disclaimer lang="sv">För information, besök wiki-sidan eller XBMC forumet.</disclaimer>
+        <disclaimer lang="zh">访问wiki页或XBMC论坛了解更多信息</disclaimer>
+        <disclaimer lang="ru">Для получения дополнительной информации посетите вики-страницу или XBMC форум.</disclaimer>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website></website>
+        <forum>http://forum.xbmc.org/showthread.php?tid=142389</forum>
+        <email>nkvoronov@gmail.com</email>
+        <source>https://github.com/nkvoronov/service.skin.widgets.git</source>
+        <email></email>
+    </extension>
 </addon>
 
 <addon
