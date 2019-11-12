@@ -1,0 +1,116 @@
+Version 0.0.37-39
+- local appdata path (thanks MikeKL)
+
+Version 0.0.36
+- v2 device wizard paths
+
+Version 0.0.34-35
+- import and append to selected channels by file order
+
+Version 0.0.33
+- ask for country if multiple
+
+Version 0.0.32
+- Import WebGrab++.config.xml (delete unnecessary ini file if country is wrong)
+
+Version 0.0.31
+- siteini version check before download
+- timezone select dialog
+
+Version 0.0.30
+- Device Setup Wizard
+
+Version 0.0.28-29
+- <mode>n - no marks
+- overwrite site.ini setting
+
+Version 0.0.27
+- directv.com
+
+Version 0.0.26
+- reverted to toggle behaviour (it allows filtering channels)
+
+Version 0.0.25
+- quick add as default in providers
+
+Version 0.0.24
+- quick add highlights already added
+
+Version 0.0.23
+- fix
+
+Version 0.0.22
+- timezone edits copied to output files
+- quick add / remove multiselect in providers context menu
+
+Version 0.0.21
+- timezone edit
+
+Version 0.0.20
+- log viewer fix
+
+Version 0.0.19
+- use script.toolbox from main kodi repo
+
+Version 0.0.18
+- depends on script.toolbox to display log
+
+Version 0.0.17
+- tv.com zip and utc storage
+
+Version 0.0.16
+- tv.com utc offset
+
+Version 0.0.15
+- tv.com automation
+
+Version 0.0.14
+- combine output commands
+
+Version 0.0.13
+- background run
+- log fix
+
+Version 0.0.12
+- move fix
+
+Version 0.0.11
+- second sort criteria
+
+Version 0.0.10
+- fix
+
+Version 0.0.9
+- fix
+
+Version 0.0.8
+- optional config settings
+- info windows
+
+Version 0.0.7
+- fixed sort countries
+- timespan
+- backup WebGrab++.config.xml to WebGrab++.config.xml.last
+
+Version 0.0.6
+- sort countries
+- hide channels
+
+Version 0.0.5
+- yellow channels
+
+Version 0.0.4
+- move channels
+- sort channels
+- color active channels
+
+Version 0.0.3
+- change name and id
+- copy config folder
+- xmltv file setting
+
+Version 0.0.2
+- sort channels by country,name,provider
+
+Version 0.0.1
+- first release
