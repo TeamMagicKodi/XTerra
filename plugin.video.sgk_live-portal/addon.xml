@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.sgk_live-portal" name="[COLORdeepskyblue]SGK[/COLOR] Live-Portal" version="1.0.6" provider-name="SGK">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+	<import addon="script.module.simplejson" />
+	<import addon="inputstream.adaptive" version="2.2.21"/>
+	<import addon="script.module.inputstreamhelper" version="0.3.5"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="6.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">[COLORdeepskyblue]SGK[/COLOR] Live-Portal / Streaming</summary>
+	<summary lang="de_DE">[COLORdeepskyblue]SGK[/COLOR] Live-Portal / Streaming</summary>
+    <description lang="en_GB">This addon contains LiveTV, Radio, Video-Charts, Festival-Broadcasts and Recordings, Documentaries and Cinema-Films with Trailers.[CR]The Content of the Addon is continuously filled and kept up2date.[CR][CR][COLORred]We do not host any content ourselves and are therefore not responsible or liable for it! [/COLOR]</description>
+	<description lang="de_DE">Dieses Addon enthält LiveTV, Radio, Video-Charts, Festival-Sendungen und Aufzeichnungen, Dokumentationen und Kinofilme mit Trailern[CR]Der Inhalt des Addons wird kontinuierlich gefüllt und aktualisiert.[CR][CR][COLORred]Wir hosten selbst keinen Inhalt und sind somit auch nicht für diesen verantwortlich oder haftbar![/COLOR]</description>
+	<disclaimer>Depending on the Law in your Country, some Content may be illegal!</disclaimer>
+    <platform>all</platform>
+	<assets>
+        <screenshot>resources/screenshot1.png</screenshot>
+        <screenshot>resources/screenshot2.png</screenshot>
+		<screenshot>resources/screenshot3.png</screenshot>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+	</assets>
+  </extension>
+</addon>

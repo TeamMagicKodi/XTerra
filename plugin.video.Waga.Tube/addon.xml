@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.Waga.Tube"
+	name="[COLOR ghostwhite]Waga[/COLOR][COLOR red] TUBE[/COLOR]"
+	version="1.0.0"
+	provider-name="[COLOR red]El[/COLOR][COLOR white]TURKO[/COLOR] | [COLOR ghostwhite]Waga[/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR ghostwhite]Waga[/COLOR][COLOR red] TUBE[/COLOR]</summary>
+    <description>[COLOR ghostwhite]"Eine Zusammenstellung einiger YouTube Videos, ihr findet dort etwas fur die grossen sowie fur die kleinen, und die jenigen die sich nicht entscheiden konnen. 
+Kategorien sind unterschiedlich, aber es sollte fur jeden was dabei sein, in diesem sinne"  "HappyStreaming"[/COLOR]</description>
+    <platform>all</platform>
+    <forum>Mein Youtube Channel:Wagas tube</forum>
+    <website></website>
+  </extension>
+</addon>
