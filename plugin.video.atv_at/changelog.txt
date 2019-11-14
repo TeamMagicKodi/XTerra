@@ -1,0 +1,21 @@
+﻿[B]Version 2.7.0  (01.09.2016)[/B]
+- Last release @PUR3
+
+[B]Version 3.0.0  (22.09.2018)[/B] Original by PUR3 / Revised by realvito[CR]
+- fixed: KODI stürzt manchmal beim starten eines Videos ab
+- added: Auswahl des Video-Dateiformats (Settings) zwischen m3u8/mp4
+- added: 3-fache Auswahl der Video-Abspielmethode (Settings) *ausprobieren*
+- added: Zeige alle Episoden der aufgerufenen Staffel auf einer Seite (Settings)
+- added: Mehr Bilder und maximale Qualität der Serien- und Episodenbilder
+- added: Debug-Log (Settings) für bessere Fehlerkontrolle
+- optimized: Im "mp4" Betrieb - versuche alten "rtsp-Link" zu normalem "http-Link" umzuwandeln, falls nicht möglich - spiele ".m3u8" ab
+
+[B]Version 3.0.1  (21.10.2018)[/B] Original by PUR3 / Revised by realvito[CR]
+- optimized and fixed: Script komplett umgeschrieben und auf eine ".py" minimiert (auf manchen Systemen - andauernd Encodingfehler)
+
+[B]Version 3.0.2  (02.11.2018)[/B] Original by PUR3 / Revised by realvito[CR]
+- fixed: Alle Videos werden NICHT abgespielt (Webseite verändert)
+
+[B]Version 3.0.3  (16.02.2019)[/B] by realvito[CR]
+- fixed: Startordner = Serien werden NICHT gelistet (Mediathek-URL verändert)
+- fixed: Serien- und Episodenbilder werden NICHT angezeigt (URL der Bilder verändert)
