@@ -1,0 +1,13 @@
+﻿3.0
+- Release
+- Autor bisher @AddonScriptorDE
+- Ab jetzt übernommen durch @L0RE
+
+...
+
+[B]Version 4.0.1+4.0.2  (02.10.2019)[/B] by realvito
+- optimized: Script überarbeitet - unnötige Codeschnipsel entfernt
+- fixed: Alle Videos werden NICHT abgespielt (Abhängigkeit -script.module.youtube.dl- entfernt)
+- optimized: Für die ausgewählte Sendung wird entweder autom. Playliste oder Abspiellink erstellt (Qualität gibt es leider nicht besser)
+- added: Addon kompatibel mit PYTHON-Vers.3 gemacht (für KODI-19+) :-)
+- fixed: Mehrere nachträglich aufgetretene Encoding- und sonstige Errors
