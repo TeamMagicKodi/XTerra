@@ -1,0 +1,18 @@
+﻿0.1.1 - Initial Source by L0RE[CR]
+
+...
+
+[B]Version 1.0.1  (14.07.2019)[/B] by realvito[CR]
+- fixed: Vereinzelt werden KEINE Episoden angezeigt, obwohl Sie vorhanden sind (z.B. Specials)
+- added: Rubrik = Alle Sendungen, Themen
+- added: Nächste Seite zum weiterblättern in Rubriken
+- added: Videos mit -inputstream.adaptive- abspielen (settings)
+- added: Neueste Episoden im Ordner oben anzeigen oder weitere Sortiermethoden (settings)
+- added: Eigene TLC-Favoriten anlegen (RechtsKlick-Menü)
+- added: Sprachfiles (.po)
+
+[B]Version 1.0.2  (17.08.2019)[/B] by realvito[CR]
+- fixed: Rubrik = Themen - Ordner ist leer
+
+[B]Version 1.0.3  (20.10.2019)[/B] by realvito[CR]
+- fixed: Titelanzeige aller Serien-Episoden fehlerhaft
